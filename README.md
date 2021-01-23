@@ -1,5 +1,8 @@
 # Load Tests: K6 deployment on Kubernetes
 
+![image](https://user-images.githubusercontent.com/908744/105606127-c286ef80-5d97-11eb-8aef-e2a6c609c75b.png)
+
+## Optional: Grafana and InfluxDB
 
 If you would like to use InfluxDB and Grafana, then you need to deploy them first.
 ```
@@ -18,7 +21,9 @@ And also you would need to import the dashboard: https://grafana.com/grafana/das
 
 ---
 
-Then run the Load Test. Remember to change the `example.js` for your script.
+## Running the Load Test
+
+Remember to change the `example.js` for your script.
 If you don't want to save results to InfluxDB (and skipped setting it up), then just remove `--out` argument (with it's value).
 
 ```
